@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:skillsmp.com)",
+      "WebSearch",
+      "Read(//Users/dogonacid/.claude/skills/**)",
+      "Read(//Users/dogonacid/.agents/skills/**)",
+      "Bash(ls ~/.claude/skills/*/SKILL.md)",
+      "Bash(ls ~/.claude/skills/*/*.md)",
+      "mcp__claude_ai_Notion__notion-search",
+      "mcp__claude_ai_Notion__notion-fetch",
+      "mcp__claude_ai_Notion__notion-query-database-view",
+      "Bash(git -C /Users/dogonacid/apelabs log --oneline -10)",
+      "Bash(npm info:*)",
+      "Bash(npm create:*)",
+      "Bash(cp:*)",
+      "Bash(npx astro:*)",
+      "Bash(npm install:*)",
+      "Bash(sips:*)",
+      "Bash(npm run:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(source /tmp/imgvenv/bin/activate)",
+      "Bash(pip install:*)",
+      "Bash(ls:*)",
+      "Bash(find /Users/dogonacid/apelabs -name robots.txt -o -name sitemap* -o -name 404.*)",
+      "Bash(wc -c /Users/dogonacid/apelabs/public/projects/*.png)"
+    ]
+  }
+}

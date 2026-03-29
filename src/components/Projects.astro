@@ -1,0 +1,31 @@
+---
+import { aiProjects, infraProjects } from "../data/projects";
+import ProjectCard from "./ProjectCard.astro";
+
+const allProjects = [...aiProjects, ...infraProjects];
+// Sort all projects newest first by parsing dates
+allProjects.sort((a, b) => {
+  const parseDate = (d: string) => {
+    const parts = d.split("–").map(s => s.trim());
+    const last = parts[parts.length - 1];
+    return new Date(last + " 1").getTime();
+  };
+  return parseDate(b.date) - parseDate(a.date);
+});
+---
+
+<section id="projects" class="relative py-24 md:py-32">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="gradient-divider mb-16"></div>
+
+    <h2 class="mb-16 text-3xl font-bold md:text-4xl fade-in">
+      Featured <span class="gradient-text">Projects</span>
+    </h2>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      {allProjects.map((project, i) => (
+        <ProjectCard project={project} delay={i * 0.1} />
+      ))}
+    </div>
+  </div>
+</section>
