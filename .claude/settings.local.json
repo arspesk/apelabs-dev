@@ -24,7 +24,8 @@
       "Bash(pip install:*)",
       "Bash(ls:*)",
       "Bash(find /Users/dogonacid/apelabs -name robots.txt -o -name sitemap* -o -name 404.*)",
-      "Bash(wc -c /Users/dogonacid/apelabs/public/projects/*.png)"
+      "Bash(wc -c /Users/dogonacid/apelabs/public/projects/*.png)",
+      "Bash(brew install:*)"
     ]
   }
 }
