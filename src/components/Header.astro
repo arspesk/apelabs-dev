@@ -1,8 +1,8 @@
 ---
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -11,9 +11,9 @@ const navItems = [
 <header
   class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 backdrop-blur-xl bg-[#0a0a0a]/80"
 >
-  <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
     <a href="/" class="flex items-center">
-      <img src="/logo.png" alt="apelabs" class="w-36 md:w-44" />
+      <img src="/logo.png" alt="apelabs" class="h-12 md:h-14" />
     </a>
 
     <!-- Desktop nav -->
@@ -42,7 +42,6 @@ const navItems = [
       id="menu-toggle"
       class="flex flex-col gap-1.5 md:hidden"
       aria-label="Toggle menu"
-      aria-expanded="false"
     >
       <span class="block h-0.5 w-6 bg-gray-400 transition-transform" id="bar1"
       ></span>
@@ -89,7 +88,6 @@ const navItems = [
 
   toggle?.addEventListener("click", () => {
     const open = menu?.classList.toggle("hidden") === false;
-    toggle?.setAttribute("aria-expanded", String(open));
     bar1?.style.setProperty("transform", open ? "rotate(45deg) translate(4px, 4px)" : "none");
     bar2?.style.setProperty("opacity", open ? "0" : "1");
     bar3?.style.setProperty("transform", open ? "rotate(-45deg) translate(4px, -4px)" : "none");
