@@ -25,3 +25,10 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# graphify output
+graphify-out/
+.graphifyignore
+
+# claude worktrees
+.claude/worktrees/
