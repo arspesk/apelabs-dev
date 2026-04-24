@@ -8,6 +8,7 @@ export const skillCategories: SkillCategory[] = [
     name: "AI / ML",
     items: [
       "Agentic Workflows",
+      "MCP (Model Context Protocol)",
       "RAG Architecture",
       "OpenAI APIs",
       "LLM Integration",
@@ -38,6 +39,7 @@ export const skillCategories: SkillCategory[] = [
       "Git",
       "Grafana",
       "Microsoft Azure",
+      "FastAPI",
     ],
   },
   {
