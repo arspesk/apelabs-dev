@@ -39,4 +39,4 @@ Personal portfolio website for Arsenii Peskovatskov at **apelabs.dev**. Static s
 
 ## Deployment
 
-Static build on Cloudflare Pages connected to GitHub repo `arspesk/apelabs`. Build command: `npm run build`, output dir: `dist`. Domain: apelabs.dev (DNS on Cloudflare).
+Static build on Cloudflare Pages connected to GitHub repo `arspesk/apelabs-dev`. Build command: `npm run build`, output dir: `dist`. Domain: apelabs.dev (DNS on Cloudflare).
