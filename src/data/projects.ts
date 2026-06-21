@@ -11,6 +11,7 @@ export interface Project {
   imagePosition?: string;
   video?: string;
   featured?: boolean;
+  links?: { label: string; url: string }[];
 }
 
 // Sorted newest → oldest
@@ -24,7 +25,7 @@ export const aiProjects: Project[] = [
       "Free, self-hosted AI job-hunt toolkit that runs inside any AI coding agent (Claude Code, Codex, OpenCode). A two-stage pipeline screens roles cheap, evaluates the survivors deep, tailors a CV per role, and tracks every application in a local web UI. Never auto-submits.",
     tech: ["Next.js 16", "React 19", "TypeScript", "TanStack Query", "Zustand", "Radix UI", "TipTap", "Python"],
     results: [
-      "Live at sur9e.com — open source (MIT)",
+      "Free & open source (MIT) — self-hosted from GitHub",
       "Configurable models per mode — cheap to screen, capable to evaluate",
       "100% local — no accounts, no telemetry",
       "Built and maintained solo, in the open",
@@ -33,6 +34,10 @@ export const aiProjects: Project[] = [
     image: "/projects/sur9e.jpg",
     video: "/projects/sur9e-demo.mp4",
     featured: true,
+    links: [
+      { label: "sur9e.com", url: "https://sur9e.com" },
+      { label: "GitHub", url: "https://github.com/arspesk/sur9e" },
+    ],
   },
   {
     title: "Hotel Reputation Dashboard",
