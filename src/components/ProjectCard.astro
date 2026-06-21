@@ -13,17 +13,31 @@ const { project, delay = 0 } = Astro.props;
   class="group overflow-hidden rounded-2xl border border-white/5 bg-surface transition-all duration-300 hover:border-brand-500/30 hover:shadow-xl hover:shadow-brand-500/5 hover:-translate-y-1 fade-in"
   style={`transition-delay: ${delay}s;`}
 >
-  <!-- Image -->
+  <!-- Media -->
   <div class="overflow-hidden">
-    <img
-      src={project.image}
-      alt={project.title}
-      class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-      style={project.imagePosition ? `object-position: ${project.imagePosition}` : undefined}
-      loading="lazy"
-      width="800"
-      height="450"
-    />
+    {project.video ? (
+      <video
+        src={project.video}
+        poster={project.image}
+        controls
+        preload="none"
+        playsinline
+        class="h-48 w-full bg-black object-cover"
+        style={project.imagePosition ? `object-position: ${project.imagePosition}` : undefined}
+        width="800"
+        height="450"
+      ></video>
+    ) : (
+      <img
+        src={project.image}
+        alt={project.title}
+        class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        style={project.imagePosition ? `object-position: ${project.imagePosition}` : undefined}
+        loading="lazy"
+        width="800"
+        height="450"
+      />
+    )}
   </div>
 
   <div class="p-6">

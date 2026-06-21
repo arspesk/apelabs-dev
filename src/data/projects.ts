@@ -9,10 +9,29 @@ export interface Project {
   skills: string[];
   image: string;
   imagePosition?: string;
+  video?: string;
 }
 
 // Sorted newest → oldest
 export const aiProjects: Project[] = [
+  {
+    title: "sur9e — AI Job-Hunt Toolkit",
+    icon: "🎯",
+    date: "Jun 2026",
+    category: "AI / Open Source",
+    description:
+      "Free, self-hosted AI job-hunt toolkit that runs inside any AI coding agent (Claude Code, Codex, OpenCode). A two-stage pipeline screens roles cheap, evaluates the survivors deep, tailors a CV per role, and tracks every application in a local web UI. Never auto-submits.",
+    tech: ["Next.js 16", "React 19", "TypeScript", "TanStack Query", "Zustand", "Radix UI", "TipTap", "Python"],
+    results: [
+      "Live at sur9e.com — open source (MIT)",
+      "Configurable models per mode — cheap to screen, capable to evaluate",
+      "100% local — no accounts, no telemetry",
+      "Built and maintained solo, in the open",
+    ],
+    skills: ["Next.js", "React", "TypeScript", "Server Actions", "Open Source"],
+    image: "/projects/sur9e.jpg",
+    video: "/projects/sur9e-demo.mp4",
+  },
   {
     title: "Hotel Reputation Dashboard",
     icon: "🏨",
