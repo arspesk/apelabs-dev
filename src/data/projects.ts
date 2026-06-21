@@ -10,6 +10,7 @@ export interface Project {
   image: string;
   imagePosition?: string;
   video?: string;
+  featured?: boolean;
 }
 
 // Sorted newest → oldest
@@ -31,6 +32,7 @@ export const aiProjects: Project[] = [
     skills: ["Next.js", "React", "TypeScript", "Server Actions", "Open Source"],
     image: "/projects/sur9e.jpg",
     video: "/projects/sur9e-demo.mp4",
+    featured: true,
   },
   {
     title: "Hotel Reputation Dashboard",
